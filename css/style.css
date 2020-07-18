@@ -1,0 +1,15 @@
+/* Configurações do menu */
+.bg-menu {
+    background-color: #68627a;
+}
+
+.fixo {
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+}
+
+.controlador {
+    z-index: 20;
+}

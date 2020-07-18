@@ -5,23 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Maurício Archiza</title>
     <!-- CSS Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS Style  -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container-fluid">
-    <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a href="#" class="navbar-brand">
-                <img src="img/logo.jpg" height="50" class="d-inline-block align-top" alt="">
-            </a>
-        </nav>
-    </header>
-</div>
+    <!-- Menu -->
+    <div class="container-fluid">
+        <header class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+               
+                <!-- <a href="#" class="navbar-brand">
+                    <img src="img/logo.png" height="40"  alt="" class="d-inline-block align-top">
+                </a>     -->
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menu Collapse">
+                    <span class="navbar-toggler-icon text-dark"></span>
+                </button>
+
+                <div id="menu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto text-dark">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark font-weight-bold">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark font-weight-bold">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark font-weight-bold">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark font-weight-bold">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark font-weight-bold">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Slide Show -->
+    <div id="slideshow" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+            <li data-target="#slideshow" data-slide-to="1"></li>
+        </ol>
+
+        <div class="carousel-inner">                    
+            <div class="fixo">
+                <img src="img/fixo.png" class="d-block w-100" alt="Logo Fixo">
+            </div>                        
+            <div class="carousel-item active">
+                <a href="#">
+                    <img src="img/banner1.png" class="d-block w-100" alt="Primeiro Slide">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="#">
+                    <img src="img/banner2.png" class="d-block w-100" alt="Segundo Slide">
+                </a>
+            </div>
+        </div>
+
+        <a href="#slideshow" class="carousel-control-prev controlador" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a href="#slideshow" class="carousel-control-next controlador" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    
 
     <!-- JS Bootstrap -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
