@@ -66,4 +66,15 @@ f2e6e6 */
 .centralizar{
     text-align: center;
 }
-    
+   
+.shadow :hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1)
+}
+
+.no-hover{
+    pointer-events: none;
+}
+
+.espaco{
+    padding: 20px !important;
+}
