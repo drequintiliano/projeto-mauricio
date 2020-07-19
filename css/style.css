@@ -24,11 +24,6 @@
     border-radius: 120px;
 }
 
-
-
-
-
-
 /* Configurações Gerais */
 
 .underline{
@@ -71,10 +66,18 @@ f2e6e6 */
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.1)
 }
 
+.sombreamento{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1)
+}
+
 .no-hover{
     pointer-events: none;
 }
 
 .espaco{
     padding: 20px !important;
+}
+
+.arredondada{
+    border-radius: 5px;
 }
