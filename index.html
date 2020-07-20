@@ -13,10 +13,10 @@
 <body>
 
     <!-- Menu -->
-    <div class="container-fluid">
+    <div id="home" class="container-fluid">
         <header class="container">
             <nav class="navbar navbar-expand-lg navbar-light">               
-                <a href="#" class="navbar-brand">
+                <a href="#home" class="navbar-brand">
                     <img src="img/logo.png" height="40"  alt="" class="d-inline-block align-top">
                 </a>    
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menu Collapse">
@@ -26,19 +26,19 @@
                 <div id="menu" class="collapse navbar-collapse">
                     <ul class="navbar-nav mx-auto text-dark">
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-dark font-weight-bold">Home</a>
+                            <a href="#home" class="nav-link text-dark font-weight-bold scroll-page">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-dark font-weight-bold">Sobre</a>
+                            <a href="#sobre" class="nav-link text-dark font-weight-bold scroll-page">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-dark font-weight-bold">Serviços</a>
+                            <a href="#servicos" class="nav-link text-dark font-weight-bold scroll-page">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-dark font-weight-bold">Projetos</a>
+                            <a href="#projetos" class="nav-link text-dark font-weight-bold scroll-page">Projetos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-dark font-weight-bold">Contato</a>
+                            <a href="#contato" class="nav-link text-dark font-weight-bold scroll-page">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -80,8 +80,8 @@
     </div>
 
     <!-- Sobre -->
-    <div class="container-fluid py-4">
-        <section class="container bg-branco">
+    <div id="sobre" class="container-fluid py-2 mt-2">
+        <section class="container">
             <header class="col-md-12 text-center py-2">
                 <h2>O Escritório</h2>
             </header>                                    
@@ -129,12 +129,11 @@
                 </div>
             </div>                
         </section>
-    </div>
-   
+    </div>   
 
     <!-- Serviços -->
     <div class="container-fluid py-4 bg-ruido">
-        <div class="container">
+        <div id="servicos" class="container">
             <header class="col-md-12 text-center">
                 <h2>Serviços</h2>
             </header>
@@ -230,7 +229,7 @@
     </div>
 
     <!-- Projetos -->
-    <div class="container-fluid py-4">
+    <div id="projetos" class="container-fluid py-4 mt-2">
         <div class="container">
             <header class="col-md-12 text-center">
                 <h2>Projetos</h2>
@@ -247,7 +246,7 @@
                 <div class="col-md-6 espaco">
                     <div class="card shadow">
                         <div class="card-body">       
-                            <img src="img/residencia-ll.jpg" alt="Projeto LL" class="img-fluid mx-auto d-block">
+                            <img src="img/residencia-ll.jpg" alt="Projeto LL" class="img-fluid mx-auto d-block" data-toggle="modal" data-target="#modal2">
                             <p class="mt-2 no-hover">Residencia LL <br>Salto de Pirapora - SP</p>
                         </div>
                     </div>
@@ -257,7 +256,7 @@
                 <div class="col-md-6 espaco">
                     <div class="card shadow">
                         <div class="card-body"> 
-                            <img src="img/residencia-ja.png" alt="Projeto JA" class="img-fluid mx-auto d-block">
+                            <img src="img/residencia-ja.png" alt="Projeto JA" class="img-fluid mx-auto d-block" data-toggle="modal" data-target="#modal3">
                             <p class="mt-2 no-hover">Residencia JA <br>Sorocaba - SP</p>
                         </div>
                     </div>                    
@@ -265,7 +264,7 @@
                 <div class="col-md-6 espaco">
                     <div class="card shadow">
                         <div class="card-body"> 
-                            <img src="img/residencia-pd.png" alt="Projeto ER" class="img-fluid mx-auto d-block">
+                            <img src="img/residencia-pd.png" alt="Projeto ER" class="img-fluid mx-auto d-block" data-toggle="modal" data-target="#modal4">
                             <p class="mt-2 no-hover">Residencia PD <br>Sorocaba - SP</p>
                         </div>
                     </div>
@@ -274,7 +273,7 @@
         </div>
     </div>        
 
-    <!-- Modal -->
+    <!-- Modal 1-->
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -290,12 +289,12 @@
                             <div class="modal-body">  
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <img src="img/residencia-er/RESIDENCIA ER IMAGEM 3.jpg" alt="Imagem 3" class="img-fluid py-2">
-                                    </div>
-                                    <div class="col-md-6">
                                         <img src="img/residencia-er/RESIDENCIA ER IMAGEM 1.jpg" alt="Imagem 1" class="img-fluid py-2">
                                         <img src="img/residencia-er/RESIDENCIA ER IMAGEM 2.jpg" alt="Imagem 2" class="img-fluid py-2">
-                                        <img src="img/residencia-er/RESIDENCIA ER IMAGEM 4.jpg" alt="Imagem 4" class="img-fluid py-2">   
+                                        <img src="img/residencia-er/RESIDENCIA ER IMAGEM 4.jpg" alt="Imagem 3" class="img-fluid py-2"> 
+                                    </div>
+                                    <div class="col-md-6">                                                                        
+                                        <img src="img/residencia-er/RESIDENCIA ER IMAGEM 3.jpg" alt="Imagem 4" class="img-fluid py-2">
                                     </div>
                                 </div>   
                                 <div class="row">
@@ -314,9 +313,121 @@
         </div>
     </div>
 
+    <!-- Modal 2-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="modal2" class="modal">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Residência LL</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>                              
+                            </div>                           
+                            <div class="modal-body">  
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="img/residencia-ll/RESIDENCIA LL IMAGEM 1.jpg" alt="Imagem 1" class="img-fluid py-2"> 
+                                        <img src="img/residencia-ll/RESIDENCIA LL IMAGEM 2.jpg" alt="Imagem 2" class="img-fluid py-2"> 
+                                    </div>
+                                    <div class="col-md-6">                                                                        
+                                        <img src="img/residencia-ll/RESIDENCIA LL IMAGEM 3.jpg" alt="Imagem 3" class="img-fluid py-2">                                        
+                                    </div>
+                                </div>   
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="img/residencia-ll/RESIDENCIA LL IMAGEM 4.jpg" alt="Imagem 4" class="img-fluid py-2">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="img/residencia-ll/RESIDENCIA LL IMAGEM 5.jpg" alt="Imagem 5" class="img-fluid py-2">                                       
+                                    </div>                                    
+                                </div>                                                                                             
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary mx-auto" data-dismiss="modal">Voltar</button>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="modal3" class="modal">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Residência JA</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>                              
+                            </div>                           
+                            <div class="modal-body">  
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="img/residencia-ja/RESIDENCIA JA IMAGEM 1.jpg" alt="Imagem 1" class="img-fluid py-2"> 
+                                        <img src="img/residencia-ja/RESIDENCIA JA IMAGEM 2.jpg" alt="Imagem 2" class="img-fluid py-2">                                      
+                                    </div>
+                                    <div class="col-md-6">                                                                        
+                                        <img src="img/residencia-ja/RESIDENCIA JA IMAGEM 3.jpg" alt="Imagem 3" class="img-fluid py-2">                                       
+                                        <img src="img/residencia-ja/RESIDENCIA JA IMAGEM 4.jpg" alt="Imagem 4" class="img-fluid py-2">
+                                    </div>
+                                </div>                                                                                                                         
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary mx-auto" data-dismiss="modal">Voltar</button>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="modal4" class="modal">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Residência PD</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>                              
+                            </div>                           
+                            <div class="modal-body">  
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="img/residencia-pd/RESIDENCIA PD IMAGEM 1.jpg" alt="Imagem 1" class="img-fluid py-2">
+                                        <img src="img/residencia-pd/RESIDENCIA PD IMAGEM 3.jpg" alt="Imagem 2" class="img-fluid py-2">
+                                        <img src="img/residencia-pd/RESIDENCIA PD IMAGEM 4.jpg" alt="Imagem 3" class="img-fluid py-2"> 
+                                    </div>
+                                    <div class="col-md-6">                                                                        
+                                        <img src="img/residencia-pd/RESIDENCIA PD IMAGEM 2.jpg" alt="Imagem 4" class="img-fluid py-2">
+                                    </div>
+                                </div>                                                                                                                          
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary mx-auto" data-dismiss="modal">Voltar</button>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <div class="container-fluid py-4 bg-ruido">
-        <div class="container">
+        <div id="contato" class="container">
             <div class="row">                  
                 <div class="col-md-6">
                     <h2>Contato</h2> 
@@ -372,5 +483,6 @@
     <!-- JS Bootstrap -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
