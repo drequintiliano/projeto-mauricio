@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Maurício Archiza</title>
+    <link rel="icon" type="imagem/png" href="img/favicon.png" />
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- CSS Style  -->
@@ -80,23 +81,27 @@
 
     <!-- Sobre -->
     <div class="container-fluid py-4">
-        <section class="container bg-branco py-2 col-md-10">
-            <header class="col-md-12 text-center">
+        <section class="container bg-branco">
+            <header class="col-md-12 text-center py-2">
                 <h2>O Escritório</h2>
             </header>                                    
-            <div>
-                <p>Missão <br> Concretizar <strong>sonhos</strong>, nao deixando de lado a individualidade de cada projeto, tornando-o único.</p>                        
-                              
-            
-                <p>Visão <br> Tornar-se escritório referência em projetos de arquitetura e no gerenciamento de obras.</p>
-                                  
-                <p>Valores</p>
-                <ol>
-                    <li>Ética</li>
-                    <li>Respeito</li>
-                    <li>Honestidade</li>
-                    <li>Pontualidade</li>
-                </ol>                                                     
+            <div class="card">
+                <div class="card-body">
+                    <div class="col-md-10 ml-auto">
+                        <p>Missão <br> Concretizar <strong>sonhos</strong>, nao deixando de lado a individualidade de cada projeto, tornando-o único.</p>                        
+                                      
+                    
+                        <p>Visão <br> Tornar-se escritório referência em projetos de arquitetura e no gerenciamento de obras.</p>
+                                          
+                        <p>Valores</p>
+                        <ol>
+                            <li>Ética</li>
+                            <li>Respeito</li>
+                            <li>Honestidade</li>
+                            <li>Pontualidade</li>
+                        </ol>                                                     
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -234,8 +239,8 @@
                 <div class="col-md-6 espaco">
                     <div class="card shadow">
                         <div class="card-body">                       
-                            <img src="img/residencia-er.png" alt="Projeto ER" class="img-fluid mx-auto d-block">
-                            <p class="mt-2 no-hover">Residencia ER <br>Sorocaba - SP</p>                      
+                            <img src="img/residencia-er.png" alt="Projeto ER" class="img-fluid mx-auto d-block" data-toggle="modal" data-target="#modal1">
+                            <p class="mt-2 no-hover">Residencia ER <br>Sorocaba - SP</p>                                                                                  
                         </div>
                     </div>
                 </div>
@@ -268,6 +273,46 @@
             </div>
         </div>
     </div>        
+
+    <!-- Modal -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="modal1" class="modal">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Residência ER</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>                              
+                            </div>                           
+                            <div class="modal-body">  
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="img/residencia-er/RESIDENCIA ER IMAGEM 3.jpg" alt="Imagem 3" class="img-fluid py-2">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="img/residencia-er/RESIDENCIA ER IMAGEM 1.jpg" alt="Imagem 1" class="img-fluid py-2">
+                                        <img src="img/residencia-er/RESIDENCIA ER IMAGEM 2.jpg" alt="Imagem 2" class="img-fluid py-2">
+                                        <img src="img/residencia-er/RESIDENCIA ER IMAGEM 4.jpg" alt="Imagem 4" class="img-fluid py-2">   
+                                    </div>
+                                </div>   
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="img/residencia-er/RESIDENCIA ER IMAGEM 5.jpg" alt="Imagem 5" class="img-fluid py-2">                              
+                                    </div>                                                              
+                                </div>                                                                                             
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary mx-auto" data-dismiss="modal">Voltar</button>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <div class="container-fluid py-4 bg-ruido">
