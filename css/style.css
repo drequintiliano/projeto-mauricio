@@ -28,8 +28,8 @@
 
 .underline{
     content: '';
-    border-top: 2px solid #000;
-    width: 70px;
+    border-bottom: 1px solid #000;
+    width: 115px;
     display: block;
     margin-bottom: 8px;
     margin: 0 auto;
@@ -57,6 +57,14 @@ f2e6e6 */
     margin-top:-64px;
     margin-left:-64px;
 } */
+
+
+body{    
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* font-family: 'Quicksand', sans-serif; */
 
 .centralizar{
     text-align: center;

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- CSS Style  -->
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -24,7 +26,7 @@
                 </button>
 
                 <div id="menu" class="collapse navbar-collapse">
-                    <ul class="navbar-nav mx-auto text-dark">
+                    <ul class="navbar-nav ml-auto text-dark">
                         <li class="nav-item">
                             <a href="#home" class="nav-link text-dark font-weight-bold scroll-page">Home</a>
                         </li>
@@ -82,60 +84,62 @@
     <!-- Sobre -->
     <div id="sobre" class="container-fluid py-2 mt-2">
         <section class="container">
-            <header class="col-md-12 text-center py-2">
-                <h2>O Escritório</h2>
+            <header class="col-md-12 text-center py-4">
+                <h1><strong>O Escritório</strong></h1>
             </header>                                    
-            <div class="card">
+            <div class="card py-4 sombreamento">
                 <div class="card-body">
-                    <div class="col-md-10 ml-auto">
-                        <p>Missão <br> Concretizar <strong>sonhos</strong>, nao deixando de lado a individualidade de cada projeto, tornando-o único.</p>                        
-                                      
-                    
-                        <p>Visão <br> Tornar-se escritório referência em projetos de arquitetura e no gerenciamento de obras.</p>
-                                          
-                        <p>Valores</p>
-                        <ol>
-                            <li>Ética</li>
-                            <li>Respeito</li>
-                            <li>Honestidade</li>
-                            <li>Pontualidade</li>
-                        </ol>                                                     
-                    </div>
+                    <div class="row espaco text-center">
+                        <div class="col-md-4 mr-auto py-2">                            
+                            <h2 class="underline">Missão</h2>
+                            <br><p>Concretizar <strong>sonhos</strong> nao deixando de lado a individualidade de cada projeto, tornando-o único.</p>                        
+                        </div>                  
+                        <div class="col-md-4 mr-auto py-2">
+                            <h2 class="underline">Visão</h2><br>
+                            <p>Tornar-se escritório referência em projetos de arquitetura e no gerenciamento de obras.</p>
+                        </div>
+                        <div class="col-md-4 mr-auto py-2">
+                            <h2 class="underline">Valores</h2><br>
+                            <p>1.Ética<br>2.Respeito<br>3.Honestidade<br>4.Pontualidade</p>                                                                          
+                        </div>
+                    </div>                                          
                 </div>
             </div>
         </section>
 
-        <section class="container py-4">
-            <header class="col-md-12 text-center">
-                <h2>O Arquiteto</h2>
+        <section class="container py-4">           
+            <header class="col-md-12 text-center py-4">
+                <h1><strong>O Arquiteto</strong></h1>
             </header>
-            <div class="row py-2">
+            <div class="row py-2">               
                 <div class="col-md-4" align="center">
                     <div class="foto-perfil">
 
                     </div>
                     <p><h5>Maurício Archiza</h5>  Arquiteto e Urbanista</p>                                          
                 </div>
-                <div class="col-md-8">
-                    <p>Arquiteto e Urbanista graduado pela Universidade Nossa Senhora do
+                <div id="arquiteto" class="col-md-8 espaco">                    
+                    <p class="text-justify">Arquiteto e Urbanista graduado pela Universidade Nossa Senhora do
                         Patrocínio (CEUNSP), cursando pós graduação em Engenharia de
                         Gerenciamento de Obras, Civil e Arquitetura (CRUZEIRO DO SUL).
                         Também possui em seu currículo o Curso Técnico em Desenho de
-                        Construção Civil (ETEC “FERNANDO PRESTES”).</p>
-                    <em>“Meu maior objetivo é atender e superar as expectativas do cliente,
-                        concretizar seu sonho. Também acredito que o <strong>RESPEITO</strong> a todos é
-                        uma forma de entender e ajudar a quebrar paradigmas com clientes
-                        e colaboradores.”</em>
+                        Construção Civil (ETEC “FERNANDO PRESTES”).</p> <br>
+                    <p class="text-center">
+                        <em>“Meu maior objetivo é atender e superar as expectativas do cliente,
+                            concretizar seu sonho. Também acredito que o <strong>RESPEITO</strong> a todos é
+                            uma forma de entender e ajudar a quebrar paradigmas com clientes
+                            e colaboradores.”</em>
+                    </p>
                 </div>
             </div>                
         </section>
     </div>   
 
     <!-- Serviços -->
-    <div class="container-fluid py-4 bg-ruido">
-        <div id="servicos" class="container">
-            <header class="col-md-12 text-center">
-                <h2>Serviços</h2>
+    <div id="servicos" class="container-fluid py-4 bg-ruido">
+        <div class="container">
+            <header class="col-md-12 text-center py-2">
+                <h1><strong>Serviços</strong></h1>
             </header>
         </div>   
 
@@ -146,7 +150,7 @@
                         <div class="col-md-2 py-4">
                             <img src="img/icons/briefing.png" alt="Icone de projeto" class="img-fluid mx-auto d-block">
                         </div>                      
-                        <div class="col-md-10">
+                        <div class="col-md-10 text-justify espaco">
                             <header>
                                 <h2>Briefing de Arquitetura</h2>
                             </header>                                    
@@ -167,7 +171,7 @@
                         <div class="col-md-2 py-4">
                             <img src="img/icons/projeto.png" alt="Icone de projeto" class="img-fluid mx-auto d-block">
                         </div>                     
-                        <div class="col-md-10">
+                        <div class="col-md-10 text-justify espaco">
                             <header>
                                 <h2>Projeto</h2>
                             </header>                                    
@@ -191,7 +195,7 @@
                         <div class="col-md-2 py-4">
                             <img src="img/icons/gerenciamento.png" alt="Icone de projeto" class="img-fluid mx-auto d-block">
                         </div>                      
-                        <div class="col-md-10">
+                        <div class="col-md-10 text-justify espaco">
                             <header>
                                 <h2>Gerenciamento de Obra</h2>
                             </header>
@@ -214,7 +218,7 @@
                         <div class="col-md-2 py-4">
                             <img src="img/icons/certificado.png" alt="Icone de projeto" class="img-fluid mx-auto d-block">
                         </div>                     
-                        <div class="col-md-10">
+                        <div class="col-md-10 text-justify espaco">
                             <header>
                                 <h2>Certificado</h2>
                             </header>
@@ -232,7 +236,7 @@
     <div id="projetos" class="container-fluid py-4 mt-2">
         <div class="container">
             <header class="col-md-12 text-center">
-                <h2>Projetos</h2>
+                <h1><strong>Projetos</strong></h1>
             </header>
             <div class="row text-center">
                 <div class="col-md-6 espaco">
@@ -428,8 +432,8 @@
     <!-- Footer -->
     <div class="container-fluid py-4 bg-ruido">
         <div id="contato" class="container">
-            <div class="row">                  
-                <div class="col-md-6">
+            <div class="row py-2">                  
+                <div class="col-md-6 py-2">
                     <h2>Contato</h2> 
                     <p>Redes Sociais Icones</p>                                                                        
                     <P>(15) 99862-0707 <br>                   
