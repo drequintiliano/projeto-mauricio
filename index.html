@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <!-- Menu -->
     <div id="home" class="container-fluid">
         <header class="container">
@@ -94,51 +93,51 @@
                     <div class="row espaco text-center">
                         <div class="col-md-4 mr-auto py-2">
                             <h2 class="underline">Missão</h2>
-<<<<<<< HEAD
-                            <br>
-                            <p>Concretizar <strong>sonhos</strong> nao deixando de lado a individualidade de cada projeto, tornando-o único.</p>
+                            <<<<<<< HEAD <br>
+                                <p>Concretizar <strong>sonhos</strong> nao deixando de lado a individualidade de cada projeto, tornando-o único.</p>
                         </div>
-=======
-                            <br><p>Concretizar <strong>sonhos</strong> não deixando de lado a individualidade de cada projeto, tornando-o único.</p>                        
-                        </div>                  
->>>>>>> 8aaea90e6a91d9e4c3976cbe836aac7d3676ec75
-                        <div class="col-md-4 mr-auto py-2">
-                            <h2 class="underline">Visão</h2><br>
-                            <p>Tornar-se escritório referência em projetos de arquitetura e no gerenciamento de obras.</p>
-                        </div>
-                        <div class="col-md-4 mr-auto py-2">
-                            <h2 class="underline">Valores</h2><br>
-                            <p>1. Ética<br>2. Respeito<br>3. Honestidade<br>4. Pontualidade</p>
-                        </div>
+                        =======
+                        <br>
+                        <p>Concretizar <strong>sonhos</strong> não deixando de lado a individualidade de cada projeto, tornando-o único.</p>
+                    </div>
+                    >>>>>>> 8aaea90e6a91d9e4c3976cbe836aac7d3676ec75
+                    <div class="col-md-4 mr-auto py-2">
+                        <h2 class="underline">Visão</h2><br>
+                        <p>Tornar-se escritório referência em projetos de arquitetura e no gerenciamento de obras.</p>
+                    </div>
+                    <div class="col-md-4 mr-auto py-2">
+                        <h2 class="underline">Valores</h2><br>
+                        <p>1. Ética<br>2. Respeito<br>3. Honestidade<br>4. Pontualidade</p>
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+    </section>
 
-        <section class="container py-4">
-            <header class="col-md-12 text-center py-4">
-                <h1><strong>O Arquiteto</strong></h1>
-            </header>
-            <div class="row py-2">
-                <div class="col-md-4" align="center">
-                    <div class="foto-perfil">
+    <section class="container py-4">
+        <header class="col-md-12 text-center py-4">
+            <h1><strong>O Arquiteto</strong></h1>
+        </header>
+        <div class="row py-2">
+            <div class="col-md-4" align="center">
+                <div class="foto-perfil">
 
-                    </div>
-                    <p>
-                        <h4><strong>Maurício Archiza</strong></h4> Arquiteto e Urbanista</p>
                 </div>
-                <div id="arquiteto" class="col-md-8 espaco">
-                    <p class="text-justify">Arquiteto e Urbanista graduado pela Universidade Nossa Senhora do Patrocínio (CEUNSP), cursando pós graduação em Engenharia de Gerenciamento de Obras, Civil e Arquitetura (CRUZEIRO DO SUL). Também possui em seu currículo o Curso Técnico
-                        em Desenho de Construção Civil (ETEC “FERNANDO PRESTES”).</p> <br>
-                    <p class="text-center">
-                        <em>“Meu maior objetivo é atender e superar as expectativas do cliente,
+                <p>
+                    <h4><strong>Maurício Archiza</strong></h4> Arquiteto e Urbanista</p>
+            </div>
+            <div id="arquiteto" class="col-md-8 espaco">
+                <p class="text-justify">Arquiteto e Urbanista graduado pela Universidade Nossa Senhora do Patrocínio (CEUNSP), cursando pós graduação em Engenharia de Gerenciamento de Obras, Civil e Arquitetura (CRUZEIRO DO SUL). Também possui em seu currículo o Curso Técnico
+                    em Desenho de Construção Civil (ETEC “FERNANDO PRESTES”).</p> <br>
+                <p class="text-center">
+                    <em>“Meu maior objetivo é atender e superar as expectativas do cliente,
                             concretizar seu sonho. Também acredito que o <strong>RESPEITO</strong> a todos é
                             uma forma de entender e ajudar a quebrar paradigmas com clientes
                             e colaboradores.”</em>
-                    </p>
-                </div>
+                </p>
             </div>
-        </section>
+        </div>
+    </section>
     </div>
 
     <!-- Serviços -->
@@ -220,7 +219,8 @@
                                 <h2>Certificado</h2>
                             </header>
                             <p class="text-justify">O Certificado Maurício Archiza Arquitetura e Urbanismo, é entregue na conclusão do projeto e um outro na conclusão da obra, sempre levando em consideração as solicitações feitas pelos clientes, comprovando a qualidade de nossos
-                                serviços.</p>
+                                serviços.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -442,7 +442,7 @@
                 </div>
                 <div class="col-md-6 py-2">
                     <h2>Fale Conosco</h2>
-                    <form action="/action.html">
+                    <form action="/enviar-email.php" method="POST">
                         <div class="form-group">
                             <label for="nome">Nome:</label>
                             <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira seu nome">
@@ -461,11 +461,11 @@
                         </div>
                         <div class="form-group">
                             <label for="mensagem">Mensagem:</label>
-                            <textarea id="mensagem" class="form-control" name="mensagem" rows="4" cols="50"></textarea><br>
+                            <textarea type="textarea" class="form-control" id="mensagem" name="mensagem" maxlength="500" rows="4" cols="50"></textarea><br>
                         </div>
-                        <button class="btn btn-primary" type="submit">Enviar</button>
+                        <button class="btn btn-primary" id="submit" type="submit">Enviar</button>
+                    </form>
                 </div>
-                </form>
             </div>
         </div>
     </div>
@@ -482,9 +482,5 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
-<<<<<<< HEAD
 
 </html>
-=======
-</html>
->>>>>>> 8aaea90e6a91d9e4c3976cbe836aac7d3676ec75
