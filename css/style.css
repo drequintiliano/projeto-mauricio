@@ -15,6 +15,18 @@
     z-index: 20;
 }
 
+.carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.carousel-indicators .active {
+    background-color: #2e3094;
+}
+
 
 /* Configurações da seção sobre */
 
@@ -33,6 +45,18 @@
     transform: translate(-50%, -50%) */
 }
 
+.underline {
+    content: '';
+    border-bottom: 1px solid #000;
+    width: 115px;
+    display: block;
+    margin-bottom: 8px;
+    margin: 0 auto;
+}
+
+
+/* Configurações depoimento */
+
 .depoimento {
     object-position: 50% 50%;
     width: 280px;
@@ -45,32 +69,18 @@
 
 /* Configurações Gerais */
 
-.underline {
-    content: '';
-    border-bottom: 1px solid #000;
-    width: 115px;
-    display: block;
-    margin-bottom: 8px;
-    margin: 0 auto;
-}
-
-
-/* #centro{
-    width:128px;
-    height:128px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin-top:-64px;
-    margin-left:-64px;
-} */
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
 .centralizar {
     text-align: center;
+}
+
+.hifen {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .shadow :hover {

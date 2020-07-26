@@ -84,8 +84,8 @@
 
     <!-- Sobre -->
     <div id="sobre" class="container-fluid py-2 mt-4">
-        <section class="container py-4">
-            <header class="col-md-12 text-center py-4">
+        <section class="container">
+            <header class="col-md-12 text-center py-5">
                 <h1><strong>O Escritório</strong></h1>
             </header>
             <div class="card sombreamento py-4 mt-4">
@@ -108,7 +108,7 @@
             </div>
         </section>
 
-        <section class="container py-4 mt-4">
+        <section class="container py-5 mt-5">
             <div class="row py-2">
                 <div class="col-md-4" align="center">
                     <br><br><br>
@@ -200,7 +200,7 @@
                         </div>
                         <div class="col-md-10 espaco">
                             <header>
-                                <h2>Gerenciamento de Obra</h2>
+                                <h2 lang="pt-br" class="hifen">Gerencia&shy;mento de Obra</h2>
                             </header>
                             <p class="text-justify">Gerenciar uma obra significa administrar, simultaneamente, o cumprimento do cronograma e a previsão financeira, gerindo profissionais, compra de materiais, certificando-se de que o serviço está sendo executado de acordo com
                                 as especificações técnicas. Desta forma evitando o retrabalho e o desperdício de materiais. O gerenciamento é parte de qualquer obra, devendo ser compreendido como um investimento indispensável.
@@ -432,8 +432,8 @@
     <!-- Depoimentos -->
     <div class="container-fluid py-4">
         <div class="container">
-            <header class="col-md-12 text-center py-4">
-                <h1><strong>Depoimentos</strong></h1>
+            <header class="col-md-12 text-center py-2">
+                <h2><strong>Depoimentos</strong></h2>
             </header>
         </div>
     </div>
@@ -462,6 +462,7 @@
                 </div>
             </div>
         </div>
+        <br>
 
         <a href="#slide-depoimentos" class="carousel-control-prev controlador" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -478,10 +479,10 @@
         <div id="contato" class="container">
             <div class="row py-2">
                 <div class="col-md-6 py-2">
-                    <h2>Contato</h2>
-                    <p>Redes Sociais Icones</p>
-                    <P>(15) 99862-0707 <br> contato@mauricioarchiza.com.br <br> arquiteto.marchiza@gmail.com
-                    </p>
+                    <h2><strong>Contato</strong></h2><br>
+                    <p><strong>Para te ajudarmos, compartilhe conosco o seu “sonho” e então iremos “concretizá-lo”.</strong></p>
+                    <p>Icones das redes sociais</p>
+                    <P>Celular: (15) 99862-0707 <br> contato@mauricioarchiza.com.br <br> arquiteto.marchiza@gmail.com</p>
                     <p>Escritório <br> Rua Luciano Fernandes Garcia, 95 - Vila Carvalho <br> CEP 18060-095 <br> Sorocaba - SP</p>
 
                     <!-- Mapa Google -->
@@ -489,7 +490,7 @@
                         width="350" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="img-fluid arredondada"></iframe>
                 </div>
                 <div class="col-md-6 py-2">
-                    <h2>Fale Conosco</h2>
+                    <h2><strong>Fale Conosco</strong></h2>
                     <form action="/enviar-email.php" method="POST">
                         <div class="form-group">
                             <label for="nome">Nome:</label>
@@ -501,7 +502,7 @@
                         </div>
                         <div class="form-group">
                             <label for="telefone">Telefone:</label>
-                            <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Insira seu número para contato">
+                            <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Insira seu n.º para contato">
                         </div>
                         <div class="form-group">
                             <label for="assunto">Assunto:</label>
@@ -511,7 +512,11 @@
                             <label for="mensagem">Mensagem:</label>
                             <textarea type="textarea" class="form-control" id="mensagem" name="mensagem" maxlength="500" rows="4" cols="50"></textarea><br>
                         </div>
-                        <button class="btn btn-primary" id="submit" type="submit">Enviar</button>
+                        <div class="row">
+                            <div class="col text-right">
+                                <button class="btn btn-primary" id="submit" type="submit">Enviar</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
