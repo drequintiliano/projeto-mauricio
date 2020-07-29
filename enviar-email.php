@@ -14,11 +14,11 @@ $header = "From:contato@mauricioarchiza.com.br"."\r\n".
     "Reply-To:".$email."\r\n".
     "X=Mailer:PHP/".phpversion();
 
-$retorno = mail($to, $subjet, $body, $header);    
+$retorno = mail($to, $subject, $body, $header);    
 
 if($retorno){
-    echo "email enviado com sucesso!";
-} else {
-    echo "não foi possivel enviar email.";
+    echo 'E-mail enviado com sucesso!';      
+} else {          
+    echo 'Falha ao enviar e-mail.';
 }
 ?>

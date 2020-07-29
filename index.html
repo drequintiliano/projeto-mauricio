@@ -118,9 +118,10 @@
                     <div class="foto-perfil">
 
                     </div>
-                    <p>
-                        <h4><strong>Maurício Archiza</strong></h4> Arquiteto e Urbanista
-                    </p>
+                    <br>
+                    <h4><strong>Maurício Archiza</strong></h4>
+                    <p>Arquiteto e Urbanista</p>
+
                 </div>
                 <div id="arquiteto" class="col-md-8 espaco">
                     <header class="col-md-12 text-center">
@@ -519,9 +520,10 @@
             <div class="row py-2">
                 <div class="col-md-6 py-2">
                     <h2><strong>Contato</strong></h2><br>
-                    <p><strong>Para te ajudarmos, compartilhe conosco o seu “sonho” e então iremos “concretizá-lo”.</strong></p>
-                    <p>Icones das redes sociais</p>
+                    <p>Para te ajudarmos, compartilhe conosco o seu <strong>sonho</strong><br>e então iremos <strong>concretizá-lo.</strong></p>
+                    <br>
                     <P>Celular: (15) 99862-0707 <br> contato@mauricioarchiza.com.br <br> arquiteto.marchiza@gmail.com</p>
+                    <br>
                     <p>Escritório <br> Rua Luciano Fernandes Garcia, 95 - Vila Carvalho <br> CEP 18060-095 <br> Sorocaba - SP</p>
 
                     <!-- Mapa Google -->
@@ -530,30 +532,30 @@
                 </div>
                 <div class="col-md-6 py-2">
                     <h2><strong>Fale Conosco</strong></h2>
-                    <form action="/enviar-email.php" name="form-email" method="POST">
+                    <form id="formulario" method="POST">
                         <div class="form-group">
                             <label for="nome">Nome:</label>
-                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira seu nome">
+                            <input type="text" class="form-control" id="nome" required name="nome" placeholder="Insira seu nome">
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail:</label>
-                            <input type="text" class="form-control" id="email" name="email" placeholder="Insira seu e-mail">
+                            <input type="email" class="form-control" id="email" required name="email" placeholder="Insira seu e-mail">
                         </div>
                         <div class="form-group">
                             <label for="telefone">Telefone:</label>
-                            <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Insira seu n.º para contato">
+                            <input type="text" class="form-control" id="telefone" required name="telefone" placeholder="Insira seu n.º para contato">
                         </div>
                         <div class="form-group">
                             <label for="assunto">Assunto:</label>
-                            <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Escolha o assunto">
+                            <input type="text" class="form-control" id="assunto" required name="assunto" placeholder="Escolha o assunto">
                         </div>
                         <div class="form-group">
                             <label for="mensagem">Mensagem:</label>
-                            <textarea type="textarea" class="form-control" id="mensagem" name="mensagem" maxlength="500" rows="4" cols="50"></textarea><br>
+                            <textarea type="textarea" class="form-control" id="mensagem" required name="mensagem" maxlength="500" rows="4" cols="50"></textarea><br>
                         </div>
                         <div class="row">
                             <div class="col text-right">
-                                <button class="btn btn-primary" id="submit" type="submit">Enviar</button>
+                                <button class="btn btn-primary btn-enviar" id="submit" type="submit">Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -563,7 +565,7 @@
     </div>
     <div class="container-fluid py-2 bg-ruido">
         <div class="container text-center">
-            <p>&copy 2020 Desenvolvimento Quintiliano</p>
+            <p>&copy; 2020 Desenvolvimento Quintiliano</p>
         </div>
     </div>
 
