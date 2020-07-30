@@ -8,7 +8,7 @@ $mensagem = $_POST['mensagem'];
 $to = "contato@mauricioarchiza.com.br";
 $subject = $assunto;
 $body = "Nome: ".$nome."\r\n".
-        "Telefone: ".$telefone. "\r\n".
+        "Telefone: ".$telefone. "\r\n"."\r\n".
         $mensagem;
 $header = "From:contato@mauricioarchiza.com.br"."\r\n".
     "Reply-To:".$email."\r\n".
@@ -17,7 +17,7 @@ $header = "From:contato@mauricioarchiza.com.br"."\r\n".
 $retorno = mail($to, $subject, $body, $header);    
 
 if($retorno){
-    echo 'E-mail enviado com sucesso!';      
+    echo 'Email enviado com sucesso!';      
 } else {          
     echo 'Falha ao enviar e-mail.';
 }

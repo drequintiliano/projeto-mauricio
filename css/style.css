@@ -67,6 +67,18 @@
 }
 
 
+/* Footer */
+
+.foot {
+    font-size: 14px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.bg-toast {
+    background-color: #2e3094;
+}
+
+
 /* Configurações Gerais */
 
 body {
@@ -101,6 +113,10 @@ body {
 
 .arredondada {
     border-radius: 5px;
+}
+
+.opacidade {
+    opacity: 0.8;
 }
 
 .bg-branco {

@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Maurício Archiza</title>
-    <link rel="icon" type="imagem/png" href="img/favicon.ico" />
-
+    <link rel="icon" type="imagem/ico" href="img/favicon.ico" />
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- CSS Style  -->
-    <link rel="stylesheet" href="css/style.css">
     <!-- Fancybox -->
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <!-- CSS Style  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/fontawesome.css">
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
 </head>
@@ -516,15 +517,17 @@
 
     <!-- Footer -->
     <div class="container-fluid py-4 mt-4 bg-ruido">
-        <div id="contato" class="container">
+        <div id="contato" class="container pb-5">
             <div class="row py-2">
                 <div class="col-md-6 py-2">
                     <h2><strong>Contato</strong></h2><br>
                     <p>Para te ajudarmos, compartilhe conosco o seu <strong>sonho</strong><br>e então iremos <strong>concretizá-lo.</strong></p>
                     <br>
-                    <P>Celular: (15) 99862-0707 <br> contato@mauricioarchiza.com.br <br> arquiteto.marchiza@gmail.com</p>
+                    <P><img src="img/icons/telefone.png" alt="icone telefone"> (15) 99862-0707 </P>
+                    <p><img src="img/icons/mail.png" alt="icone email"> contato@mauricioarchiza.com.br</p>
+                    <p><img src="img/icons/mail.png" alt="icone email"> arquiteto.marchiza@gmail.com</p>
                     <br>
-                    <p>Escritório <br> Rua Luciano Fernandes Garcia, 95 - Vila Carvalho <br> CEP 18060-095 <br> Sorocaba - SP</p>
+                    <p><img src="img/icons/placeholder.png" alt="icone localização"> Escritório <br>Rua Luciano Fernandes Garcia, 95 - Vila Carvalho <br> CEP 18060-095 Sorocaba - SP</p>
 
                     <!-- Mapa Google -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.2663372793436!2d-47.47056508554503!3d-23.48691446473112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f54a9ed7b189%3A0x409b034a2fd0d110!2sR.%20Luciano%20Fernandes%20Garc%C3%ADa%2C%2095%20-%20Vila%20Carvalho%2C%20Sorocaba%20-%20SP%2C%2018060-095!5e0!3m2!1sen!2sbr!4v1595136445829!5m2!1sen!2sbr"
@@ -554,8 +557,14 @@
                             <textarea type="textarea" class="form-control" id="mensagem" required name="mensagem" maxlength="500" rows="4" cols="50"></textarea><br>
                         </div>
                         <div class="row">
+                            <div class="col">
+                                <div aria-live="polite" aria-atomic="true" class="position-relative">
+                                    <div class="position-absolute" id="toast-place" style="top: 0; right: 0;">
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col text-right">
-                                <button class="btn btn-primary btn-enviar" id="submit" type="submit">Enviar</button>
+                                <button class="btn btn-primary" id="btn-enviar" type="submit">Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -564,13 +573,14 @@
         </div>
     </div>
     <div class="container-fluid py-2 bg-ruido">
-        <div class="container text-center">
-            <p>&copy; 2020 Desenvolvimento Quintiliano</p>
+        <div class="container text-center foot">
+            <p>&copy;2020 Desenvolvimento Quintiliano</p>
         </div>
     </div>
 
     <!-- JS Bootstrap -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
