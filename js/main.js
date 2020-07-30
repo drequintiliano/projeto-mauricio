@@ -30,7 +30,7 @@ $(document).ready(() => {
                     <p class="py-2 ml-2"><strong>Insira um e-mail e uma mensagem ao menos!</strong></p>
                 </div>
             </div>
-            `);
+            `)
 
             $('.toast-validar').toast('show');
             $('.toast-validar').on('hidden.bs.toast', function(event) {
@@ -57,7 +57,7 @@ $(document).ready(() => {
                     <p class="py-2 ml-2"><strong>E-mail enviado com sucesso!</strong></p>
                 </div>
             </div>
-            `);
+            `)
 
             $(".toast-email").toast('show');
             $('.toast-validar').on('hidden.bs.toast', function(event) {
