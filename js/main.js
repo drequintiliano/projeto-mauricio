@@ -17,8 +17,7 @@ $(document).ready(() => {
         var email = $('#email').val();
         var mensagem = $('#mensagem').val();
 
-        if (email.length <= 5 && mensagem.length <= 5) {
-
+        if (email.length <= 5 || mensagem.length <= 5) {
             $('#toast-place').append(`
             <div class="toast-validar bg-danger arredondada opacidade" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
                 <div class="toast-header">                                     
@@ -30,7 +29,7 @@ $(document).ready(() => {
                     <p class="py-2 ml-2"><strong>Insira um e-mail e uma mensagem ao menos!</strong></p>
                 </div>
             </div>
-            `)
+            `);
 
             $('.toast-validar').toast('show');
             $('.toast-validar').on('hidden.bs.toast', function(event) {
@@ -57,9 +56,12 @@ $(document).ready(() => {
                     <p class="py-2 ml-2"><strong>E-mail enviado com sucesso!</strong></p>
                 </div>
             </div>
-            `)
+            `);
 
-            $(".toast-email").toast('show');
+            $('.toast-email').toast('show');
+            $('.toast-validar').on('hidden.bs.toast', function(event) {
+                $(event.currentTarget).remove();
+            });
             $('.toast-validar').on('hidden.bs.toast', function(event) {
                 $(event.currentTarget).remove();
             });
