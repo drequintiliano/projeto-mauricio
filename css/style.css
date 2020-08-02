@@ -32,11 +32,11 @@
 
 .foto-perfil {
     object-position: 50% 50%;
-    width: 220px;
-    height: 220px;
+    width: 260px;
+    height: 260px;
     object-fit: cover;
-    background-color: #2e3094;
-    border-radius: 120px;
+    background-image: url("../img/perfil.jpg");
+    border-radius: 140px;
     position: relative;
     /* margin: 0;
     top: 50%;

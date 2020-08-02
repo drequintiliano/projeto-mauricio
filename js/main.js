@@ -26,7 +26,7 @@ $(document).ready(() => {
                     </button>               
                 </div>
                 <div class="toast-body">
-                    <p class="py-2 ml-2"><strong>Insira um e-mail e uma mensagem ao menos!</strong></p>
+                    <p class="py-2 ml-2"><strong>Por favor insira uma mensagem e um e-mail.</strong></p>
                 </div>
             </div>
             `);
