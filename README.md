@@ -1,2 +1,2 @@
 # projeto-mauricio
-projeto profissional do site mauricio archiza
+projeto profissional do site mauricio archiza arquiteto
